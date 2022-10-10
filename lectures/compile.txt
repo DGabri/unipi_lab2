@@ -1,0 +1,1 @@
+gcc -std=c11 -g -Wall -O -o output file.c
