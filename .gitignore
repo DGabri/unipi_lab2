@@ -2,3 +2,5 @@
 !*.c
 !Makefile
 !*.py
+!/lectures/
+!/exercises/
