@@ -45,5 +45,6 @@ int main(int argc, char *argv[]) {
   assert(&vector[0] == vector);
   //&vector[1]; // address of vector[1]
   // vector + 1; // address of vector[1]
+  // vector+i reads the value of the element in position &vector[i]
   // calculate string length
 }
