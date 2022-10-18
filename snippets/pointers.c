@@ -22,6 +22,12 @@ void print_array(int arr[], int arr_len) {
   printf("]\n");
 }
 
+void copy_string(char string[]) {
+  // A copy of source is created dynamically
+  // and pointer to copy is returned.
+  char *target = strdup(string);
+  free(target);
+}
 // arguments int arr[] == int *arr
 void double_elements(int arr[], int arr_len) {
   for (int i = 0; i < arr_len; i++) {
