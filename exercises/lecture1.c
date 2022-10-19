@@ -143,9 +143,29 @@ void invert_arr() {
         arr[left] = arr[right];
         arr[right] = tmp;
     }
+}
 
+int array_condition() {
+  int arr[10];
+  int counter = 0;
+  int index = -1;
+  while (counter < 10) {
+    int err = scanf("%d", &arr[counter]);
 
+    if (err != 1) {
+      puts("error");
+      exit(1);
+    }
 
+    counter++;
+  }
+
+  for (int i = 1; i < 9; i++) {
+    if (arr[i] == (arr[i + 1] - arr[i - 1])) {
+      index = i;
+    }
+  }
+  return index;
 }
 
 int main(int argc, char *argv[]) { 
