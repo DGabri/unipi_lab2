@@ -89,10 +89,18 @@ void write_to_file(char fname[]) {
   }
 
   // close file
+  // RETURN VALUES
+  // Upon successful completion 0 is returned.  Otherwise, EOF is returned
+  // fclose(p) == EOF is the same as fclose(p) != 0
   if (fclose(p) == EOF) {
     puts("Errore chiusura file");
     exit(1);
   }
+  /*
+  if (fclose(p) == EOF) {
+    puts("Errore chiusura file");
+    exit(1);
+  } */
 }
 // fprintf()
 
