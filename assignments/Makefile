@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-std=c11 -Wall -o -g
+CFLAGS=-std=c11 -Wall -O -g
 LDLIBS=-lm
 
 SRCS=$(wildcard *.c)
