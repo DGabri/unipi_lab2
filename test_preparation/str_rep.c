@@ -55,8 +55,8 @@ char *product(char str[], int times) {
 }
 
 int main(int argc, char *argv[]) {
-  char str[1000];
-  int k;
+  // char str[1000];
+  // int k;
 
   // scanf("%s", str);
   // scanf("%d", &k);

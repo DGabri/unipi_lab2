@@ -81,38 +81,6 @@ bool stringhe_uguali2(char s[], char q[]) {
   return (true);
 }
 
-// puntatori
-bool stringhe_uguali_punt(char s[], char q[]) {
-
-  char *s_ptr = s;
-  char *q_ptr = q;
-  bool equal = true;
-
-  while (*s_ptr != '\0') {
-    printf("%s\n", s_ptr);
-    s_ptr++;
-    /*if ((q[q_index] != '\0')) {
-
-      if (s[s_char++] != q[q_index++]) {
-        equal = false;
-        break;
-      }
-
-    } else {
-      equal = false;
-      break;
-    }
-    */
-  }
-  /*
-  if ((s[s_char] == '\0') && (q[q_index] != '\0')) {
-    equal = false;
-  }
-  */
-
-  return equal;
-}
-
 bool stringhe_uguali_punt2(char s[], char q[]) {
   for (; *s != '\0';) {
     if (*s != *q)
