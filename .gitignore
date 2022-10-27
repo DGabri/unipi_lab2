@@ -3,6 +3,7 @@
 !Makefile
 !*.py
 !/lectures/
+!/assignments/
 !/exercises/
 !/snippets/
 !/dsa/
